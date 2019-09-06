@@ -7,4 +7,4 @@ This project is built while I was taking a course in Udmey "Complete React Devel
  - **State Management**: Redux
  - **Backend**: GraphQL
  - **Authenication**: Firebase
- - **Deplyment Host**: Heroku
+ - **Deployment Host**: Heroku
