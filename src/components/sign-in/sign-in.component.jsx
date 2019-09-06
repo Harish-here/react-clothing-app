@@ -14,9 +14,7 @@ export default class SignIn extends React.Component {
 
     handleChange = (e) => {
         const { name, value } = e.target;
-        this.setState( (state) => {
-            return { [name]: value }
-        } )
+        this.setState({ [name]: value })
     }
 
     handleSubmit = (e) => {
