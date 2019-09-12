@@ -1,5 +1,6 @@
 import React from 'react';
 import './sign-in.style.scss';
+import FormInput from '../form-input/form-input'
 
 export default class SignIn extends React.Component {
     constructor(props){
@@ -29,24 +30,23 @@ export default class SignIn extends React.Component {
                 <h2>So you've account, Login here</h2>
                 <span>Sign in with your Email and password</span>
                 <form className='flex flex-column w-30' onSubmit={this.handleSubmit}>
-                    <input 
+                    <FormInput 
                         type="email"
-                        name="email" 
+                        name="email"
+                        label='Email' 
                         id="email" 
-                        placeholder='Enter your email'
-                        onChange={this.handleChange} 
+                        handleChange={this.handleChange} 
                         required
                      />
-                    <label htmlFor="email">Email</label>
-                    <input 
+                   
+                    <FormInput 
                         type="password" 
                         name="password" 
+                        label='Password' 
                         id="password" 
-                        placeholder='password please'
-                        onChange={this.handleChange}  
+                        handleChange={this.handleChange}  
                         required 
                     />
-                    <label htmlFor="password">Password</label>
                     <button type='submit'>Submit</button>
                     <button type='button'>Sign in with Google</button>
                 </form>
