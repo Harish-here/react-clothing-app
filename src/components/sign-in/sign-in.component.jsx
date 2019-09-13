@@ -35,7 +35,8 @@ export default class SignIn extends React.Component {
                         name="email"
                         label='Email' 
                         id="email" 
-                        handleChange={this.handleChange} 
+                        handleChange={this.handleChange}
+                        value={this.state.email} 
                         required
                      />
                    
@@ -44,7 +45,8 @@ export default class SignIn extends React.Component {
                         name="password" 
                         label='Password' 
                         id="password" 
-                        handleChange={this.handleChange}  
+                        handleChange={this.handleChange}
+                        value={this.state.password}  
                         required 
                     />
                     <button type='submit'>Submit</button>
